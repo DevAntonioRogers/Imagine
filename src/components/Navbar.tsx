@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
+import { AiFillInstagram, AiFillFacebook, AiOutlineTwitter } from "react-icons/ai";
 
 const Navbar = () => {
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -13,10 +14,16 @@ const Navbar = () => {
     <nav className="py-2 w-full">
       <div className="w-[89%] m-auto max-w-[1400px] flex justify-between items-center">
         <a href="">
-          <h1 className="text-3xl drop-shadow text-[#FFAFCC] font-bold">IMAGINE</h1>
+          <h1 className="text-3xl font-bold text-[#FFAFCC]">IMAGINE</h1>
         </a>
 
-        <ul className="flex items-center gap-8 md:static absolute left-0 ">
+        <ul
+          className={`md:flex items-center gap-8 md:static absolute  ${
+            openMobileMenu
+              ? "top-12 py-4 w-full bg-[#FFAFCC] left-0 text-center space-y-10 text-white drop-shadow-lg"
+              : "hidden"
+          }`}
+        >
           <li>
             <a href="/">Home</a>
           </li>
@@ -29,16 +36,21 @@ const Navbar = () => {
           <li>
             <a href="#contact">Contact</a>
           </li>
-
-          <li>
-            <button>Login</button>
-          </li>
-          <li>
-            <button>Signup</button>
-          </li>
         </ul>
 
-        <div className="md:hidden" onClick={handleMobileMenu}>
+        <div className="flex gap-4 text-white items-center ml-auto md:ml-0">
+          <div className="bg-[#FFAFCC] p-1 rounded-full hover:translate-y-[-2px] transition-all">
+            <AiFillFacebook size={18} />
+          </div>
+          <div className="bg-[#FFAFCC] p-1 rounded-full hover:translate-y-[-2px] transition-all">
+            <AiFillInstagram size={18} />
+          </div>
+          <div className="bg-[#FFAFCC] p-1 rounded-full hover:translate-y-[-2px] transition-all">
+            <AiOutlineTwitter size={18} />
+          </div>
+        </div>
+
+        <div className="md:hidden ml-4" onClick={handleMobileMenu}>
           {!openMobileMenu ? <FiMenu size={25} /> : <MdClose size={25} />}
         </div>
       </div>
