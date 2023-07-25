@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul
           className={`md:flex items-center gap-8 md:static absolute  ${
             openMobileMenu
-              ? "top-12 py-4 w-full bg-[#FFAFCC] left-0 text-center space-y-10 text-white drop-shadow-lg"
+              ? "top-12 py-4 w-full bg-[#FFAFCC] left-0 text-center space-y-10 text-white drop-shadow-lg z-20"
               : "hidden"
           }`}
         >
