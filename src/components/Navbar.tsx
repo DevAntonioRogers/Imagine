@@ -12,6 +12,14 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    if (openMobileMenu) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
+    }
+  }, [openMobileMenu]);
+
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsScrolling(true);
