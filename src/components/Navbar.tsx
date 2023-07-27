@@ -45,10 +45,10 @@ const Navbar = () => {
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services">About</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about">Pricing</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
