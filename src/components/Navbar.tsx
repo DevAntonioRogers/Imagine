@@ -42,16 +42,24 @@ const Navbar = () => {
           }`}
         >
           <li>
-            <a href="/">Home</a>
+            <a href="/" onClick={() => setOpenMobileMenu(false)}>
+              Home
+            </a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onClick={() => setOpenMobileMenu(false)}>
+              About
+            </a>
           </li>
           <li>
-            <a href="#pricing">Pricing</a>
+            <a href="#pricing" onClick={() => setOpenMobileMenu(false)}>
+              Pricing
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setOpenMobileMenu(false)}>
+              Contact
+            </a>
           </li>
         </ul>
 
