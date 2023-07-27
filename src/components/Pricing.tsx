@@ -9,7 +9,7 @@ const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
 
   return (
-    <section className="bg-[#BDE0FE] py-20 mt-10">
+    <section className="bg-[#BDE0FE] py-20 mt-10" id="pricing">
       <h2 className="font-bold text-[35px] md:text-[46px] text-gray-800 text-center mb-5">
         Choose The Best Plan For You
       </h2>

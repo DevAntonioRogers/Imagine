@@ -2,7 +2,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 const Info = () => {
   return (
-    <section className="mt-10">
+    <section className="mt-10" id="about">
       <div className="w-[89%] m-auto max-w-[1400px] flex flex-col lg:flex-row gap-8 xl:gap-[180px] ">
         {/* LEFT SIDE */}
         <div className="grid grid-cols-1 flex-1 gap-[30px] md:grid-cols-2 xl:gap-y-[70px]">
